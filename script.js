@@ -20,3 +20,28 @@ function addToCart(dishId) {
   cart.push(dishId);
   alert('Блюдо добавлено в корзину!');
 }
+
+
+
+
+
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Предотвращаем стандартное отправление формы
+
+    const formData = new FormData(this);
+
+    fetch('/submit_form', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert("Спасибо за ваше сообщение!");
+    })
+    .catch(error => {
+        alert("Произошла ошибка. Пожалуйста, попробуйте позже.");
+    });
+});
+</script>

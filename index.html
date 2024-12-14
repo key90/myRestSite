@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Саня, добро пожаловать в ресторан "Вкусный Уголок"</h1>
+    <h1>Добро пожаловать в ресторан "Вкусный Уголок"</h1>
     <nav>
       <ul>
         <li><a href="menu.html">Меню</a></li>
@@ -22,8 +22,49 @@
     <p>Выберите блюда и оформите заказ прямо с сайта. Ваш заказ будет доставлен прямо к вам домой.</p>
   </section>
 
+
+
+
+
+<section id="reviews">
+    <h2>Отзывы</h2>
+    <div class="review">
+        <p class="review-text">"Прекрасный ресторан! Отличное обслуживание и вкусная еда!"</p>
+        <p class="review-author">— Иван, 14 декабря 2024</p>
+    </div>
+    <div class="review">
+        <p class="review-text">"Очень понравился интерьер и атмосфера. Обязательно вернусь!"</p>
+        <p class="review-author">— Анна, 14 декабря 2024</p>
+    </div>
+    <!-- Здесь можно добавить больше отзывов -->
+</section>
+
+
+
+
+
+<section id="contact">
+    <h2>Обратная связь</h2>
+    <form id="contact-form" action="/submit_form" method="POST">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <p><button type="submit">Отправить</button></p>
+    </form>
+</section>
+
+
+
+
+
   <footer>
-    <p>&copy; 2024 Ресторан "Вкусный Уголок"</p>
+    <p>&copy; 2024 Ресторан "Вкусный Уголок" ©</p>
   </footer>
 </body>
 </html>
