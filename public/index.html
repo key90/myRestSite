@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ресторан "Вкусный Уголок"</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Добро пожаловать в ресторан "Вкусный Уголок"</h1>
+    <nav>
+      <ul>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="order.html">Оформить заказ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="welcome">
+    <h2>Попробуйте наше меню!</h2>
+    <p>Выберите блюда и оформите заказ прямо с сайта. Ваш заказ будет доставлен прямо к вам домой.</p>
+  </section>
+
+
+
+
+
+<section id="reviews">
+    <h2>Отзывы</h2>
+    <div class="review">
+        <p class="review-text">"Прекрасный ресторан! Отличное обслуживание и вкусная еда!"</p>
+        <p class="review-author">— Иван, 14 декабря 2024</p>
+    </div>
+    <div class="review">
+        <p class="review-text">"Очень понравился интерьер и атмосфера. Обязательно вернусь!"</p>
+        <p class="review-author">— Анна, 14 декабря 2024</p>
+    </div>
+    <!-- Здесь можно добавить больше отзывов -->
+</section>
+
+
+
+
+
+<section id="contact">
+    <h2>Обратная связь</h2>
+    <form id="contact-form" action="/submit_form" method="POST">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <p><button type="submit">Отправить</button></p>
+    </form>
+</section>
+
+
+<section id="contact">
+        <h2>Контакты</h2>
+        <p>Телефон: +7 999 123 45 67</p>
+        <p>Email: info@vkusno.ru</p>
+        <p>Адрес: Москва, ул. Примерная, 10</p>
+    </section>
+
+
+  <footer>
+    <p>&copy; 2024 Ресторан "Вкусный Уголок" ©</p>
+  </footer>
+</body>
+</html>

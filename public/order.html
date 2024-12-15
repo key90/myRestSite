@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа - Ресторан "Вкусный Уголок"</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Оформление заказа</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cart-section">
+      <h2>Ваша корзина</h2>
+      <div id="cart-container"></div>
+      <p id="cart-total">Итого: 0 руб.</p>
+    </section>
+
+    <section id="order-form-section">
+      <h2>Контактная информация</h2>
+      <form id="order-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Адрес доставки:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <button type="submit">Оформить заказ</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Ресторан "Вкусный Уголок"</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
