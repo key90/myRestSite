@@ -17,17 +17,23 @@
     </nav>
   </header>
 
+  <section class="cart">
+    <h2>Корзина</h2>
+    <div id="cart-container"></div>
+    <div id="cart-total">Итого: 0 руб.</div>
+  </section>
+
   <section class="order-form">
     <h2>Ваши данные</h2>
     <form id="order-form">
       <label for="name">Имя:</label>
       <input type="text" id="name" required>
 
-      <p><label for="address">Адрес доставки:</label>
-      <input type="text" id="address" required></p>
+      <label for="address">Адрес доставки:</label>
+      <input type="text" id="address" required>
 
-      <p><label for="phone">Телефон:</label>
-      <input type="tel" id="phone" required></p>
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" required>
 
       <p><button type="submit">Оформить заказ</button></p>
     </form>
